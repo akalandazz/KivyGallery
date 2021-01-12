@@ -15,6 +15,7 @@ Builder.load_string("""
 		loop:True
 		anim_type:"in_out_circ"
 		on_current_slide:root.indicae_slide(*args)
+		pos_hint:{"center_x":.5, "center_y":.5}
 		
 	GaleryButton:
 		text:'<'
