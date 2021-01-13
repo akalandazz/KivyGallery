@@ -62,7 +62,7 @@ class Gallery(FloatLayout):
 	img_sources = ListProperty([])
 	def __init__(self,**kwargs):
 		super(Gallery,self).__init__(**kwargs)
-		self.accept_images()
+		Clock.schedule_once(self.accept_images, 0)
 
 	def accept_images(self):
 		for index, img_src in enumerate(self.img_sources):
